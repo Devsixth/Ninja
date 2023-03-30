@@ -1,4 +1,4 @@
-import sqlite3
+# import sqlite3
 import requests
 import pandas as pd
 import streamlit as st
@@ -204,12 +204,12 @@ if __name__ == "__main__":
     url = "https://api.telegram.org/bot5378660401:AAG6VvrbQY4c5Ph3dtIlRdy7E4mmcew67O8/sendmessage"
 
     # accessing the Symbol column from the table StockProfile
-    conn = sqlite3.connect('Data/DBEngine.db')
-    c = conn.cursor()
-    c.execute("SELECT Symbol FROM StockProfile")
-    results = c.fetchall()
-    names = [row[0] for row in results]
-    names[0] = '<select>'
+    # conn = sqlite3.connect('Data/DBEngine.db')
+    # c = conn.cursor()
+    # c.execute("SELECT Symbol FROM StockProfile")
+    # results = c.fetchall()
+    # names = [row[0] for row in results]
+    # names[0] = '<select>'
 
     # calling the functions to run the app
 
