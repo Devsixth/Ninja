@@ -204,7 +204,7 @@ if __name__ == "__main__":
     url = "https://api.telegram.org/bot5378660401:AAG6VvrbQY4c5Ph3dtIlRdy7E4mmcew67O8/sendmessage"
 
     # accessing the Symbol column from the table StockProfile
-    conn = sqlite3.connect('G:/Recommender/DataBase/DBEngine.db')
+    conn = sqlite3.connect('Data/DBEngine.db')
     c = conn.cursor()
     c.execute("SELECT Symbol FROM StockProfile")
     results = c.fetchall()
