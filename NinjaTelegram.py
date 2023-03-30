@@ -25,8 +25,8 @@ def news():
         news = st.text_input("Enter the News", )
         if st.button("SendNews"):
             st.write(news)
-            # to_channel(news)
-            # to_group(news)
+            to_channel(news)
+            to_group(news)
 
 
 # sending closure part to Telegram
